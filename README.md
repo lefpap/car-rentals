@@ -1,4 +1,89 @@
-# Astro Starter Kit: Minimal
+# Car Rentals Application
+
+A modern car rental application built with Astro 5, Supabase, and Tailwind CSS.
+
+## Features
+
+- Browse available cars
+- View car details
+- Book cars
+- Manage bookings
+- Responsive design
+
+## Prerequisites
+
+- Node.js 18 or higher
+- npm or yarn
+- Supabase account
+
+## Setup
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd car-rentals
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Create a Supabase project and set up the following tables:
+
+```sql
+-- Cars table
+create table cars (
+  id uuid default uuid_generate_v4() primary key,
+  name text not null,
+  model text not null,
+  year integer not null,
+  price decimal not null,
+  image text not null,
+  available boolean default true
+);
+
+-- Bookings table
+create table bookings (
+  id uuid default uuid_generate_v4() primary key,
+  car_id uuid references cars(id),
+  user_id uuid references auth.users(id),
+  start_date date not null,
+  end_date date not null,
+  total_price decimal not null,
+  created_at timestamp with time zone default timezone('utc'::text, now())
+);
+```
+
+4. Copy `.env.example` to `.env` and update with your Supabase credentials:
+```bash
+cp .env.example .env
+```
+
+5. Update the `.env` file with your Supabase project URL and anon key.
+
+6. Start the development server:
+```bash
+npm run dev
+```
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+The built application will be in the `dist` directory.
+
+## Technologies Used
+
+- [Astro](https://astro.build)
+- [Supabase](https://supabase.com)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## License
+
+MIT
 
 ```sh
 npm create astro@latest -- --template minimal

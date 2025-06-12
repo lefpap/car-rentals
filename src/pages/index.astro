@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { dummyCars } from '../lib/dummyData';
+import Layout from "../layouts/Layout.astro";
+import { dummyCars } from "../lib/dummyData";
 
 const featuredCars = dummyCars.slice(0, 3);
 ---
@@ -9,10 +9,18 @@ const featuredCars = dummyCars.slice(0, 3);
   <!-- Hero Section -->
   <div class="relative bg-gradient-primary rounded-3xl overflow-hidden">
     <div class="absolute inset-0 bg-black opacity-20"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+    <div
+      class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center"
+    >
       <h1 class="text-5xl font-bold text-white mb-6">Find Your Perfect Ride</h1>
-      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Experience luxury and comfort with our premium car rental service. Choose from our extensive fleet of vehicles.</p>
-      <a href="/cars" class="inline-block bg-white text-[var(--color-primary)] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Experience luxury and comfort with our premium car rental service.
+        Choose from our extensive fleet of vehicles.
+      </p>
+      <a
+        href="./cars"
+        class="inline-block bg-white text-[var(--color-primary)] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+      >
         Choose Your Car
       </a>
     </div>
@@ -21,39 +29,94 @@ const featuredCars = dummyCars.slice(0, 3);
   <!-- Features Section -->
   <div class="py-20">
     <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">Why Choose Us</h2>
-      <p class="text-xl text-gray-600">Experience the best car rental service with our premium features</p>
+      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">
+        Why Choose Us
+      </h2>
+      <p class="text-xl text-gray-600">
+        Experience the best car rental service with our premium features
+      </p>
     </div>
-    
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-        <div class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[var(--color-primary)]" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+      >
+        <div
+          class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-[var(--color-primary)]"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+              clip-rule="evenodd"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">Premium Fleet</h3>
-        <p class="text-gray-600">Choose from our selection of luxury and economy vehicles, all maintained to the highest standards.</p>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          Premium Fleet
+        </h3>
+        <p class="text-gray-600">
+          Choose from our selection of luxury and economy vehicles, all
+          maintained to the highest standards.
+        </p>
       </div>
-      
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-        <div class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[var(--color-primary)]" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+      >
+        <div
+          class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-[var(--color-primary)]"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">Best Prices</h3>
-        <p class="text-gray-600">Competitive rates and special offers for our customers. No hidden fees or surprises.</p>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          Best Prices
+        </h3>
+        <p class="text-gray-600">
+          Competitive rates and special offers for our customers. No hidden fees
+          or surprises.
+        </p>
       </div>
-      
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-        <div class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[var(--color-primary)]" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+
+      <div
+        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+      >
+        <div
+          class="w-14 h-14 bg-[var(--color-primary)]/10 rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-[var(--color-primary)]"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+              clip-rule="evenodd"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">24/7 Support</h3>
-        <p class="text-gray-600">Our customer service team is available around the clock to assist you with any queries.</p>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          24/7 Support
+        </h3>
+        <p class="text-gray-600">
+          Our customer service team is available around the clock to assist you
+          with any queries.
+        </p>
       </div>
     </div>
   </div>
@@ -61,28 +124,53 @@ const featuredCars = dummyCars.slice(0, 3);
   <!-- Featured Cars Section -->
   <div class="py-20 bg-[var(--color-background)]">
     <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">Featured Vehicles</h2>
-      <p class="text-xl text-gray-600">Check out our most popular rental options</p>
+      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">
+        Featured Vehicles
+      </h2>
+      <p class="text-xl text-gray-600">
+        Check out our most popular rental options
+      </p>
     </div>
-    
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {featuredCars.map((car) => (
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-          <img src={car.image} alt={car.name} class="w-full h-48 object-cover" />
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-2">{car.name}</h3>
-            <p class="text-gray-600 mb-4">{car.model} • {car.year}</p>
-            <div class="flex justify-between items-center">
-              <p class="text-2xl font-bold text-[var(--color-primary)]">${car.price}<span class="text-sm text-gray-500">/day</span></p>
-              <a href={`/cars/${car.id}`} class="text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] font-medium">View Details →</a>
+      {
+        featuredCars.map((car) => (
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <img
+              src={car.image}
+              alt={car.name}
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-2">
+                {car.name}
+              </h3>
+              <p class="text-gray-600 mb-4">
+                {car.model} • {car.year}
+              </p>
+              <div class="flex justify-between items-center">
+                <p class="text-2xl font-bold text-[var(--color-primary)]">
+                  ${car.price}
+                  <span class="text-sm text-gray-500">/day</span>
+                </p>
+                <a
+                  href={`./cars/${car.id}`}
+                  class="text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] font-medium"
+                >
+                  View Details →
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))
+      }
     </div>
-    
+
     <div class="text-center mt-12">
-      <a href="/cars" class="inline-block bg-[var(--color-primary)] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[var(--color-primary-dark)] transition-colors">
+      <a
+        href="./cars"
+        class="inline-block bg-[var(--color-primary)] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[var(--color-primary-dark)] transition-colors"
+      >
         View All Cars
       </a>
     </div>
@@ -91,32 +179,50 @@ const featuredCars = dummyCars.slice(0, 3);
   <!-- How It Works Section -->
   <div class="py-20">
     <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">How It Works</h2>
+      <h2 class="text-3xl font-bold text-[var(--color-secondary)] mb-4">
+        How It Works
+      </h2>
       <p class="text-xl text-gray-600">Rent a car in three simple steps</p>
     </div>
-    
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="text-center">
-        <div class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div
+          class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6"
+        >
           <span class="text-2xl font-bold text-[var(--color-primary)]">1</span>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">Choose Your Car</h3>
-        <p class="text-gray-600">Browse our fleet and select the perfect vehicle for your needs</p>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          Choose Your Car
+        </h3>
+        <p class="text-gray-600">
+          Browse our fleet and select the perfect vehicle for your needs
+        </p>
       </div>
-      
+
       <div class="text-center">
-        <div class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div
+          class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6"
+        >
           <span class="text-2xl font-bold text-[var(--color-primary)]">2</span>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">Book Online</h3>
-        <p class="text-gray-600">Select your dates and complete the booking process</p>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          Book Online
+        </h3>
+        <p class="text-gray-600">
+          Select your dates and complete the booking process
+        </p>
       </div>
-      
+
       <div class="text-center">
-        <div class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div
+          class="w-16 h-16 bg-[var(--color-primary)]/10 rounded-full flex items-center justify-center mx-auto mb-6"
+        >
           <span class="text-2xl font-bold text-[var(--color-primary)]">3</span>
         </div>
-        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">Pick Up & Drive</h3>
+        <h3 class="text-xl font-semibold text-[var(--color-secondary)] mb-3">
+          Pick Up & Drive
+        </h3>
         <p class="text-gray-600">Collect your car and enjoy your journey</p>
       </div>
     </div>
@@ -125,9 +231,17 @@ const featuredCars = dummyCars.slice(0, 3);
   <!-- CTA Section -->
   <div class="bg-gradient-primary rounded-3xl overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
-      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who trust us for their car rental needs.</p>
-      <a href="/cars" class="inline-block bg-white text-[var(--color-primary)] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+      <h2 class="text-3xl font-bold text-white mb-6">
+        Ready to Start Your Journey?
+      </h2>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Join thousands of satisfied customers who trust us for their car rental
+        needs.
+      </p>
+      <a
+        href="./cars"
+        class="inline-block bg-white text-[var(--color-primary)] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+      >
         Choose Your Car
       </a>
     </div>

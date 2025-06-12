@@ -3,9 +3,6 @@ import Layout from "../../layouts/Layout.astro";
 import { dummyCars } from "../../lib/dummyData";
 
 export async function getStaticPaths() {
-  const response = await fetch("...");
-  const data = await response.json();
-
   return dummyCars.map((car) => {
     return {
       params: { id: car.id },

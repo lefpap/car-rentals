@@ -26,9 +26,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: node({
-    mode: "standalone",
-  }),
+  // adapter: node({
+  //   mode: "standalone",
+  // }),
 
   site: "https://lefpap.github.io",
   base: "/car-rentals",

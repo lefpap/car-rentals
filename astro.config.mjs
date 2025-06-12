@@ -28,5 +28,6 @@ export default defineConfig({
   //   mode: "standalone",
   // }),
 
-  site: "https://lefpap.github.io/car-rentals",
+  site: "https://lefpap.github.io",
+  base: "/car-rentals",
 });

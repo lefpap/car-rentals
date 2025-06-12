@@ -29,4 +29,6 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
+
+  site: "https://lefpap.github.io/car-rentals",
 });
